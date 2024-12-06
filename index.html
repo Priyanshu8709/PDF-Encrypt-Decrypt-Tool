@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Encrypt/Decrypt Tool</title>
+  <!-- Link the CSS for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PDF Encrypt/Decrypt Tool</h1>
+  
+  <h2>Encrypt a PDF</h2>
+  <form id="encryptForm">
+    <label for="pdfFile">Choose PDF to encrypt:</label>
+    <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+    <label for="password">Encryption Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Encrypt PDF</button>
+  </form>
+
+  <h2>Decrypt a PDF</h2>
+  <form id="decryptForm">
+    <label for="encryptedFile">Choose Encrypted PDF:</label>
+    <input type="file" id="encryptedFile" name="encryptedFile" accept=".pdf" required>
+    <label for="decryptPassword">Decryption Password:</label>
+    <input type="password" id="decryptPassword" name="decryptPassword" required>
+    <button type="submit">Decrypt PDF</button>
+  </form>
+
+  <!-- Link the client-side JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
